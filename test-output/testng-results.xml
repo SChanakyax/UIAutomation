@@ -1,25 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="161654" started-at="2022-05-30T20:43:53 IST" finished-at="2022-05-30T20:46:34 IST">
+  <suite name="Default suite" duration-ms="57352" started-at="2022-06-01T09:06:33 IST" finished-at="2022-06-01T09:07:30 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="161654" started-at="2022-05-30T20:43:53 IST" finished-at="2022-05-30T20:46:34 IST">
+    <test name="Default test" duration-ms="57352" started-at="2022-06-01T09:06:33 IST" finished-at="2022-06-01T09:07:30 IST">
       <class name="testScenarios.TestLoginPage">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testScenarios.TestLoginPage@29b5cd00]" name="beforeTest" is-config="true" duration-ms="4371" started-at="2022-05-30T20:43:53 IST" finished-at="2022-05-30T20:43:57 IST">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testScenarios.TestLoginPage@29b5cd00]" name="beforeTest" is-config="true" duration-ms="4762" started-at="2022-06-01T09:06:33 IST" finished-at="2022-06-01T09:06:38 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="enterUsername()[pri:0, instance:testScenarios.TestLoginPage@29b5cd00]" name="enterUsername" duration-ms="303" started-at="2022-05-30T20:43:57 IST" finished-at="2022-05-30T20:43:57 IST">
+        <test-method status="PASS" signature="enterUsernamePassword()[pri:1, instance:testScenarios.TestLoginPage@29b5cd00]" name="enterUsernamePassword" duration-ms="279" started-at="2022-06-01T09:06:38 IST" finished-at="2022-06-01T09:06:38 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- enterUsername -->
-        <test-method status="PASS" signature="testProduct()[pri:0, instance:testScenarios.TestLoginPage@29b5cd00]" name="testProduct" duration-ms="156930" started-at="2022-05-30T20:43:57 IST" finished-at="2022-05-30T20:46:34 IST">
+        </test-method> <!-- enterUsernamePassword -->
+        <test-method status="PASS" signature="testProduct()[pri:2, instance:testScenarios.TestLoginPage@29b5cd00]" name="testProduct" duration-ms="112" started-at="2022-06-01T09:06:38 IST" finished-at="2022-06-01T09:06:38 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testProduct -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:testScenarios.TestLoginPage@29b5cd00]" name="afterTest" is-config="true" duration-ms="0" started-at="2022-05-30T20:46:34 IST" finished-at="2022-05-30T20:46:34 IST">
+        <test-method status="PASS" signature="testSingleProductPage()[pri:3, instance:testScenarios.TestLoginPage@29b5cd00]" name="testSingleProductPage" duration-ms="50074" started-at="2022-06-01T09:06:38 IST" finished-at="2022-06-01T09:07:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSingleProductPage -->
+        <test-method status="PASS" signature="click_btn_Cart()[pri:5, instance:testScenarios.TestLoginPage@29b5cd00]" name="click_btn_Cart" duration-ms="2063" started-at="2022-06-01T09:07:28 IST" finished-at="2022-06-01T09:07:30 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- click_btn_Cart -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testScenarios.TestLoginPage@29b5cd00]" name="afterTest" is-config="true" duration-ms="1" started-at="2022-06-01T09:07:30 IST" finished-at="2022-06-01T09:07:30 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

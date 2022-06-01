@@ -13,38 +13,33 @@ WebDriver driver;
 		this.driver = driver;
 	}
 	
+	By selectedProductImage = By.xpath("//*[@id=\'inventory_item_container\']/div/div/div[1]/img");
+
+	
 	//Click on product image
-	By productImage = By.xpath("//*[@id=\'item_4_img_link\']/img");
-	
-	
-	//By fieldPassword = By.id("password");
-	//By login_Btn = By.id("login-button");
-/*	
-	public void enterUsername()  {
-		try {
-			driver.findElement(fieldUsername).clear();
-			driver.findElement(fieldUsername).sendKeys("standard_user");
-		}catch(Exception e) {
-			System.out.println("Exception " + e.getMessage());
-		}
-	}
-*/	
+	//By productImage = By.xpath("//*[@id=\'item_4_img_link\']/img");
+	By productImage = By.xpath("//*[@id=\'item_4_img_link\']");
+ 
+	//Click a single product
 	public void clickProduct() {
 		try {
 			driver.findElement(productImage).click();
-		}catch(Exception e) {
-			
-		}
-	}
- 
-	public void verifyProductPage() {
-		try {
-			driver.findElement(productImage).click();
-			String url = driver.getCurrentUrl();
-			assertEquals(url, "https://www.saucedemo.com/inventory-item.html?id=4");
-			System.out.println("Product test ok");
+			System.out.println("Product CLicked");
 		}catch(Exception e) {
 			System.out.println("Exception " + e.getMessage());
 		}
 	}
+	
+	//Check weather the next page is inventory page
+			public void verifyProductPage() {
+				try {
+					driver.findElement(selectedProductImage).click();
+					String url = driver.getCurrentUrl();
+					assertEquals(url, "https://www.saucedemo.com/inventory-item.html?id=4");
+					System.out.println("Product test ok");
+				}catch(Exception e) {
+					System.out.println("Exception " + e.getMessage());
+				}
+			}
+		
 }

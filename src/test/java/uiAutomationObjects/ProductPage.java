@@ -4,6 +4,7 @@ import static org.testng.Assert.assertEquals;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class ProductPage {
 	
@@ -11,11 +12,19 @@ public class ProductPage {
 	
 	public ProductPage(WebDriver driver) {
 		this.driver = driver;
+		System.out.println("Productpage Constructor");
 	}
 	
-	//By addToCart = By.xpath("//*[@id=\'add-to-cart-sauce-labs-backpack\']");// 
-	By addToCart = By.xpath("//*[@id='add-to-cart-sauce-labs-backpack']");
-	By bnt_Cart = By.xpath("//*[@id=\'shopping_cart_container\']/a");
+	//
+	////*[@id="shopping_cart_container"]/a //*[@id="shopping_cart_container"]
+	//By addToCart = By.xpath("//*[@id=\'add-to-cart-sauce-labs-backpack\']");////*[@id="add-to-cart-sauce-labs-backpack"] 
+	By addToCart = By.id("add-to-cart-sauce-labs-backpack");//Add to cart
+	////*[@id="add-to-cart-sauce-labs-backpack"]
+	//By addToCart = By.linkText("Add to cart");
+	By bnt_Cart = By.xpath("//*[@id=\'shopping_cart_container\']");////*[@id="shopping_cart_container"]/a
+	By bnt_CartCss =By.cssSelector("shopping_cart_link");
+	
+	By cartItem = By.xpath("//*[@id=\'item_4_title_link\']/div");
 	
 	//Click add to cart
 	public void clickAddToCart_Btn() {
@@ -31,6 +40,7 @@ public class ProductPage {
 	public void clickCart_Btn() {
 		try {
 			driver.findElement(bnt_Cart).click();
+			System.out.println("BTNclicked");
 		}catch(Exception e) {
 			System.out.println("Cart button click" + e.getMessage());
 		}
@@ -48,4 +58,16 @@ public class ProductPage {
 		}
 	}
  
+	//Verify the addToCart item at cartPage
+	public boolean verifyCartItem() {
+		try {
+			WebElement name = driver.findElement(cartItem);
+			assertEquals(name, "Sauce Labs Backpack");
+			System.out.println("ok");
+		}catch(Exception e) {
+			System.out.println("Exception " + e.getMessage());
+		}
+		return true;
+	}
+	
 }

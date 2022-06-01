@@ -5,10 +5,9 @@
     <classes>
       <class name="testScenarios.TestLoginPage">
         <methods>
+          <include name="enterUsernamePassword"/>
           <include name="afterTest"/>
           <include name="beforeTest"/>
-          <include name="testProduct"/>
-          <include name="enterUsername"/>
         </methods>
       </class> <!-- testScenarios.TestLoginPage -->
     </classes>
