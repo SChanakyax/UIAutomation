@@ -5,8 +5,8 @@
     <classes>
       <class name="testScenarios.TestLoginPage">
         <methods>
-          <include name="enterUsernamePassword"/>
           <include name="afterTest"/>
+          <include name="verifyCartItem"/>
           <include name="beforeTest"/>
         </methods>
       </class> <!-- testScenarios.TestLoginPage -->

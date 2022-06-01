@@ -4,6 +4,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Reporter;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -42,6 +43,7 @@ public class TestLoginPage {
 		System.out.println("****************************Single Product Page loading****************************");
  
 		driver.manage().timeouts().implicitlyWait(50, TimeUnit.SECONDS);
+		Reporter.log("User credentials successfull");
 
 	} 
 	
@@ -55,7 +57,8 @@ public class TestLoginPage {
 		ProductPage product = new ProductPage(driver);
 		product.verifyAddToCartCartPage();
 		System.out.println("***************************Checked Single Product page****************************");	
-	 
+		Reporter.log("Product Page loaded successfully");
+
 
 	}
 	
@@ -67,40 +70,36 @@ public class TestLoginPage {
 
 		productpage.clickAddToCart_Btn(); 
 		System.out.println("****************************Click Add to cart btn***************************");
+		Reporter.log("item click button Add To Cart");
+
 	}
 	
 	@Test(priority=5)
 	public void click_btn_Cart() throws InterruptedException {
-		Thread.sleep(2000);
+		//Thread.sleep(2000);
 		ProductPage productpage = new ProductPage(driver);
 		productpage.clickCart_Btn();
 		System.out.println("****************************Cart Button clicked***************************");
+		Reporter.log("Cart Page loaded");
+
 	}
-		
-/*	
-	@Test(priority=4)
-	public void clickAddToCart() throws InterruptedException {
+	
+
+	@Test(priority=6)
+	public void verifyCartItem() throws InterruptedException {
 		Thread.sleep(5000);
 		ProductPage productpage = new ProductPage(driver);
-		productpage.clickCart_Btn();
+		productpage.verifyCartItem();
 		System.out.println("****************************Cart Button clicked***************************");
+		Reporter.log("CartItem Verified");
 	}
  
 	
 
-	@AfterTest
-	public void clicBtnCart() {
-	 
-		ProductPage productpage = new ProductPage(driver);
-		productpage.clickAddToCart_Btn();
-	}
-	
-	*/
-	
 	
 	@AfterTest
 	public void afterTest() {
-		//driver.quit();
+		driver.quit();
 	}
 	
 }

@@ -1,33 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
+    <line>
+      <![CDATA[User credentials successfull]]>
+    </line>
+    <line>
+      <![CDATA[Product Page loaded successfully]]>
+    </line>
+    <line>
+      <![CDATA[item click button Add To Cart]]>
+    </line>
+    <line>
+      <![CDATA[Cart Page loaded]]>
+    </line>
+    <line>
+      <![CDATA[CartItem Verified]]>
+    </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="57352" started-at="2022-06-01T09:06:33 IST" finished-at="2022-06-01T09:07:30 IST">
+  <suite name="Default suite" duration-ms="109969" started-at="2022-06-01T19:45:59 IST" finished-at="2022-06-01T19:47:49 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="57352" started-at="2022-06-01T09:06:33 IST" finished-at="2022-06-01T09:07:30 IST">
+    <test name="Default test" duration-ms="109969" started-at="2022-06-01T19:45:59 IST" finished-at="2022-06-01T19:47:49 IST">
       <class name="testScenarios.TestLoginPage">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testScenarios.TestLoginPage@29b5cd00]" name="beforeTest" is-config="true" duration-ms="4762" started-at="2022-06-01T09:06:33 IST" finished-at="2022-06-01T09:06:38 IST">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testScenarios.TestLoginPage@29b5cd00]" name="beforeTest" is-config="true" duration-ms="3721" started-at="2022-06-01T19:45:59 IST" finished-at="2022-06-01T19:46:03 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="enterUsernamePassword()[pri:1, instance:testScenarios.TestLoginPage@29b5cd00]" name="enterUsernamePassword" duration-ms="279" started-at="2022-06-01T09:06:38 IST" finished-at="2022-06-01T09:06:38 IST">
+        <test-method status="PASS" signature="enterUsernamePassword()[pri:1, instance:testScenarios.TestLoginPage@29b5cd00]" name="enterUsernamePassword" duration-ms="285" started-at="2022-06-01T19:46:03 IST" finished-at="2022-06-01T19:46:03 IST">
           <reporter-output>
+            <line>
+              <![CDATA[User credentials successfull]]>
+            </line>
           </reporter-output>
         </test-method> <!-- enterUsernamePassword -->
-        <test-method status="PASS" signature="testProduct()[pri:2, instance:testScenarios.TestLoginPage@29b5cd00]" name="testProduct" duration-ms="112" started-at="2022-06-01T09:06:38 IST" finished-at="2022-06-01T09:06:38 IST">
+        <test-method status="PASS" signature="testProduct()[pri:2, instance:testScenarios.TestLoginPage@29b5cd00]" name="testProduct" duration-ms="104" started-at="2022-06-01T19:46:03 IST" finished-at="2022-06-01T19:46:04 IST">
           <reporter-output>
+            <line>
+              <![CDATA[Product Page loaded successfully]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testProduct -->
-        <test-method status="PASS" signature="testSingleProductPage()[pri:3, instance:testScenarios.TestLoginPage@29b5cd00]" name="testSingleProductPage" duration-ms="50074" started-at="2022-06-01T09:06:38 IST" finished-at="2022-06-01T09:07:28 IST">
+        <test-method status="PASS" signature="testSingleProductPage()[pri:3, instance:testScenarios.TestLoginPage@29b5cd00]" name="testSingleProductPage" duration-ms="50052" started-at="2022-06-01T19:46:04 IST" finished-at="2022-06-01T19:46:54 IST">
           <reporter-output>
+            <line>
+              <![CDATA[item click button Add To Cart]]>
+            </line>
           </reporter-output>
         </test-method> <!-- testSingleProductPage -->
-        <test-method status="PASS" signature="click_btn_Cart()[pri:5, instance:testScenarios.TestLoginPage@29b5cd00]" name="click_btn_Cart" duration-ms="2063" started-at="2022-06-01T09:07:28 IST" finished-at="2022-06-01T09:07:30 IST">
+        <test-method status="PASS" signature="click_btn_Cart()[pri:5, instance:testScenarios.TestLoginPage@29b5cd00]" name="click_btn_Cart" duration-ms="57" started-at="2022-06-01T19:46:54 IST" finished-at="2022-06-01T19:46:54 IST">
           <reporter-output>
+            <line>
+              <![CDATA[Cart Page loaded]]>
+            </line>
           </reporter-output>
         </test-method> <!-- click_btn_Cart -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:testScenarios.TestLoginPage@29b5cd00]" name="afterTest" is-config="true" duration-ms="1" started-at="2022-06-01T09:07:30 IST" finished-at="2022-06-01T09:07:30 IST">
+        <test-method status="PASS" signature="verifyCartItem()[pri:6, instance:testScenarios.TestLoginPage@29b5cd00]" name="verifyCartItem" duration-ms="55053" started-at="2022-06-01T19:46:54 IST" finished-at="2022-06-01T19:47:49 IST">
+          <reporter-output>
+            <line>
+              <![CDATA[CartItem Verified]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyCartItem -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testScenarios.TestLoginPage@29b5cd00]" name="afterTest" is-config="true" duration-ms="660" started-at="2022-06-01T19:47:49 IST" finished-at="2022-06-01T19:47:49 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

@@ -24,7 +24,8 @@ public class ProductPage {
 	By bnt_Cart = By.xpath("//*[@id=\'shopping_cart_container\']");////*[@id="shopping_cart_container"]/a
 	By bnt_CartCss =By.cssSelector("shopping_cart_link");
 	
-	By cartItem = By.xpath("//*[@id=\'item_4_title_link\']/div");
+	//By cartItem = By.xpath("//*[@id=\'item_4_title_link\']/div");
+	By cartItem = By.cssSelector("inventory_item_name");
 	
 	//Click add to cart
 	public void clickAddToCart_Btn() {
